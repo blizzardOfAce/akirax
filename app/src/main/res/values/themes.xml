@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Works best -->
+    <style name="DarkActionbar" parent="android:ThemeOverlay.Material.Dark.ActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item> <!-- Set your desired color here -->
+    </style>
+    <style name="Theme.AkiraX" parent="android:Theme.Material.Light.NoActionBar">
+    <item name="android:statusBarColor">@color/black</item> <!-- Set your desired color here -->
+    </style>
+
+    <style name="FullScreenTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+       <!-- <item name="android:windowBackground">@android:color/transparent</item> -->
+    </style>
+
+    <style name="FullScreenThemeTest" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item> <!-- Keep black or any color you want as background -->
+        <item name="android:statusBarColor">@android:color/black</item> <!-- Match the status bar color with background -->
+        <item name="android:windowTranslucentStatus">true</item> <!-- Makes the status bar blend with the background -->
+    </style>
+
+    <style name="NoDisplay" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/animated_logo</item>
+        <item name="postSplashScreenTheme">@style/DarkActionbar</item> <!-- Set app's theme after splash -->
+    </style>
+
+</resources>
